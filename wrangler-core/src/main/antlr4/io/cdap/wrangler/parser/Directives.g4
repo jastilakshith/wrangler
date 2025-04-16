@@ -311,3 +311,23 @@ fragment Int
 fragment Digit
  : [0-9]
  ;
+
+
+// Byte size units
+BYTE_SIZE : DIGIT+ ('.' DIGIT+)? BYTE_UNIT ;
+fragment BYTE_UNIT : [kKmMgGtTpP]? [bB] ; // KB, MB, GB, etc.
+
+// Time duration units
+TIME_DURATION : DIGIT+ ('.' DIGIT+)? TIME_UNIT ;
+fragment TIME_UNIT : ('ms' | 's' | 'm' | 'h' | 'd') ;
+
+// Parser rules
+value
+  : STRING
+  | NUMBER
+  | BYTE_SIZE
+  | TIME_DURATION
+  ;
+
+byteSizeArg : BYTE_SIZE ;
+timeDurationArg : TIME_DURATION ;

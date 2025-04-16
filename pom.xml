@@ -176,6 +176,19 @@
     <testSourceDirectory>${testSourceLocation}</testSourceDirectory>
     <pluginManagement>
       <plugins>
+       <plugin>
+         <groupId>org.apache.maven.plugins</groupId>
+         <artifactId>maven-compiler-plugin</artifactId>
+         <version>3.10.1</version> <!-- Version compatible with Java 17 -->
+         <configuration>
+          <source>17</source> <!-- Java version you are using -->
+         <target>17</target> <!-- Java version you are targeting -->
+         <compilerArgs>
+        <arg>--add-opens</arg>
+        <arg>java.base/java.lang=ALL-UNNAMED</arg>
+        </compilerArgs>
+      </configuration>
+      </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>

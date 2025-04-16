@@ -1,0 +1,27 @@
+
+Prompt 1. What necessary classes and methods should I use to parse file size values like KB, MB, GB, and convert them to bytes for further processing?
+Prompt 2. What classes and methods should I use to handle time durations in units like seconds (s), minutes (m), and hours (h), and convert them to milliseconds?
+prompt 3. What is maven and how to install it?
+Prompt 4. Create unit tests for the new parsers to verify that values such as 1MB, 500KB, and 2m are parsed and converted correctly.
+Prompt 5. Develop a directive (aggregate-stats) to compute the total data size and total time spent, handling both byte size and time duration inputs.
+Prompt 6. Improve the parser to handle additional units like terabytes (TB) or petabytes (PB) in file sizes, and include them in byte size calculations.
+Prompt 7. Write a function to aggregate data from time-based columns, such as summing up total time from a list of durations in various units.
+Prompt 8. Update the project documentation to reflect new parsing capabilities, including examples of how to use the byte size and time duration parsers.
+Prompt 9. Implement a method to format durations in a more readable form, such as converting seconds into "X hours, Y minutes, Z seconds".
+Prompt 10. Write integration tests to ensure that the aggregate-stats directive works as expected with different input data formats.
+Prompt 11. Optimize the byte size and duration parsers for large-scale datasets, ensuring they perform efficiently when processing millions of rows.
+Prompt 12. http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] [Help 2] http://cwiki.apache.org/confluence/display/MAVEN/PluginExecutionException
+[ERROR]
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -r
+
+Prompt 13. [INFO] [stdout]   Unable to make protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException accessible: module java.base does not "opens java.lang" to unnamed module @1060b431
+[INFO] [stdout]   Unable to make protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException accessible: module java.base does not "opens java.lang" to unnamed module @1060b431
+[INFO] [stdout]   Unable to make protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException accessible: module java.base does not "opens java.lang" to unnamed module @1060b431
+[INFO] [stdout]   Unable to make protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException accessible: module java.base does not "opens java.lang" to unnamed module @1060b431
+[INFO] [stdout]   Unable to make protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException accessible: module java.base does not "opens java.lang" to unnamed module @1060b431
+
+Prompt 14. wrangler/steps/aggregates  i dont see this path
+
+Prompt 15. TestingRig cannot be resolved
